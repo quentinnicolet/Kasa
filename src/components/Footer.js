@@ -1,13 +1,13 @@
 import React from "react";
-import '../styles/Section.css';
+import '../styles/Footer.css';
+import { ReactComponent as LogoFooter } from '../assets/LOGO_White.svg';
 
-import { ReactComponent as LogoFooter } from '../../public/assets/LOGO_White.svg';
 function Footer() {
     return (
-        <footer style={{ backgroundColor: "black", textAlign: "center" }}>
+        <footer>
             <section>
-                <LogoFooter style={{ width: "100px" }} />
-                <p style={{ color: "white", margin: "10px 0" }}>© 2020 Kasa. All rights reserved</p>
+                <LogoFooter id="LogoFooter" />
+                <p>© 2020 Kasa. All rights reserved</p>
             </section>
         </footer>
     );

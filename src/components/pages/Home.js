@@ -1,11 +1,11 @@
-function About () {
+function Home () {
     return(
         <>
             <h1>
-                Coucou About
+                Coucou accueil
             </h1>
         </>
     )
 }
 
-export default About;
+export default Home;

@@ -1,0 +1,23 @@
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 100px;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#menu ul li {
+    padding-left: 15%;
+}
