@@ -8,6 +8,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100vw;
+    padding: 2% 0;
 }
 
 footer p {

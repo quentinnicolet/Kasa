@@ -1,0 +1,9 @@
+h1{
+    font-size: 3vw;
+}
+#home-img{
+    background-image: url("../assets/Section-back1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}

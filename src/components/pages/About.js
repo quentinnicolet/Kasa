@@ -1,9 +1,15 @@
-function About () {
-    return(
+function About() {
+    return (
         <>
-            <h1>
-                Coucou About
-            </h1>
+            <div id="about-container">
+                <h1>
+                    Coucou About
+                </h1>
+                <div className='top-section' id='home-img'>
+
+                </div>
+
+            </div>
         </>
     )
 }

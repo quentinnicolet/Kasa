@@ -1,5 +1,5 @@
 header {
-    width: 100vw;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,6 +9,10 @@ header {
     width: 100px;
 }
 
+#menu * {
+    color: #FF6060;
+}
+
 #menu ul {
     list-style-type: none;
     display: flex;
@@ -16,6 +20,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0;
+
 }
 
 #menu ul li {
