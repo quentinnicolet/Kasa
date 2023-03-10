@@ -1,9 +1,21 @@
-h1{
+h1 {
     font-size: 3vw;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
 }
-#home-img{
+
+#home-img {
     background-image: url("../assets/Section-back1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

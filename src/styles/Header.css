@@ -3,6 +3,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
@@ -18,11 +19,6 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
     padding: 0;
-
-}
-
-#menu ul li {
-    padding-left: 15%;
+    gap: 15px;
 }
