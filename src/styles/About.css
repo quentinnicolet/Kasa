@@ -1,0 +1,14 @@
+#about-img {
+      background-image: url("../assets/Section-back3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      filter: brightness(0.7);
+}
+#about-container, .grid-accordion{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+}

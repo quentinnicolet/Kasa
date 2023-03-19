@@ -2,6 +2,7 @@ import '../styles/App.css';
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
+import Emplacement from './pages/Emplacement';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Header from './Header';
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/logement/:id" element={<Emplacement />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>

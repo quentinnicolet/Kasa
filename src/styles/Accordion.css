@@ -1,0 +1,18 @@
+.header-accordion{
+      background: #FF6060;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 3%;
+}
+.accordion-title {
+      color: #FFF;
+      font-weight: 500;
+  }
+    
+.accordion-description{
+      background: #F7F7F7;
+      border-radius: 5px;
+      color: #FF6060;
+      padding: 1% 3%;
+}

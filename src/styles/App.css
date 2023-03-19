@@ -4,7 +4,10 @@ body {
     padding: 0 !important;
     font-family: Montserrat;
 }
-
+#root{
+    /* min-height: 100vh !important; */
+    display: flex;
+    flex-direction: column;}
 main,
 header {
     padding: 0 10%;
