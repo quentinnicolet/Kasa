@@ -19,7 +19,7 @@ function Home() {
                 </div>
                 <div className='contanier-emplacements'>
                     {emplacements.map((logement) => (
-                        <NavLink key={logement.id} to={'/logement/' + logement.id + '/#'}>
+                        <NavLink key={logement.id} to={'/logement/' + logement.id}>
                             <Cards
                                 key={logement.id}
                                 id={logement.id}

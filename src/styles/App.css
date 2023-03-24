@@ -5,9 +5,12 @@ body {
     font-family: Montserrat;
 }
 #root{
-    /* min-height: 100vh !important; */
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    overflow-x: hidden !important;
+    justify-content: space-between;
+    min-height: 100vh;
+}
 main,
 header {
     padding: 0 10%;
