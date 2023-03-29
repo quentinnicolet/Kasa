@@ -11,16 +11,28 @@ import ListeLogements from "../../database/logement.json";
 
 function Emplacement() {
       const { id } = useParams();
-      const [ficheLogement, setFicheLogement] = useState([]);
-      useEffect(() => {
-            const logement = ListeLogements.find((item) => item.id == id);
-            console.log(logement)
-            setFicheLogement(logement);
-      }, []);
+      const logement = ListeLogements.find((item) => item.id == id);
 
       return (
             <>
-                  <div>{ficheLogement?.title}</div>
+                  <div>
+                        <Slider pictures={logement?.pictures} />
+                  </div>
+                  <div>
+                        <div>
+                              <div>{logement?.title}</div>
+                              <div>{logement?.location}</div>
+                              {/* <><Tag/> */}
+                        </div>
+                        <div>
+                              {/* <><Host/> */}
+                              {/* <><Rating/> */}
+                        </div>
+                  </div>
+                  <div id="grid-accordion-emplacement" dclassName="grid-accordion">
+                        <Accordion title="Desciption" description={logement?.description} />
+                        <Accordion title="Equipements" description={logement?.equipments} />
+                  </div>
             </>
       );
 }

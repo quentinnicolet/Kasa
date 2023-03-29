@@ -1,50 +1,36 @@
-import React, { useState } from "react";
-import "../styles/Carrousel.css";
-import PrevArrow from "../assets/Next-arrow.png";
-import NextArrow from "../assets/Prev-arrow.png";
+import React, { useState } from 'react';
 
-function Slider({ slides }) {
-      const [current, setCurrent] = useState(0);
-      const length = slides.length;
+function Slider(props) {
+      const [currentIndex, setCurrentIndex] = useState(0);
 
-      function nextSlide() {
-            setCurrent(current === length - 1 ? 0 : current + 1);
-      }
+      const goToNextSlide = () => {
+            const lastIndex = props.pictures.length - 1;
+            const shouldResetIndex = currentIndex === lastIndex;
+            const index = shouldResetIndex ? 0 : currentIndex + 1;
+            setCurrentIndex(index);
+      };
 
-      function prevSlide() {
-            setCurrent(current === 0 ? length - 1 : current - 1);
-      }
+      const goToPreviousSlide = () => {
+            const lastIndex = props.pictures.length - 1;
+            const shouldResetIndex = currentIndex === 0;
+            const index = shouldResetIndex ? lastIndex : currentIndex - 1;
+            setCurrentIndex(index);
+      };
 
       return (
             <div className="slider">
-                  {slides.map((picture, index) => (
-                        <div
-                              key={index}
-                              className={
-                                    index === current
-                                          ? "slide slider__active-picture"
-                                          : "slide slider__inactive-picture"
-                              }
-                        >
-                              {index === current && (
-                                    <img src={picture} alt="" className="slider__picture" />
-                              )}
-                        </div>
-                  ))}
-                  {length > 1 && (
-                        <>
-                              <div className="slider__previous" onClick={prevSlide}>
-                                    <img
-                                          src={PrevArrow}
-                                          alt=""
-                                          className="slider__previous-icon"
-                                    />
+                  <button onClick={goToPreviousSlide}>Previous</button>
+                  <div className="slides">
+                        {props.pictures.map((pictures, index) => (
+                              <div
+                                    key={index}
+                                    className={index === currentIndex ? "slide active" : "slide"}
+                              >
+                                    <img src={pictures} alt={`Slide ${index + 1}`} />
                               </div>
-                              <div className="slider__next" onClick={nextSlide}>
-                                    <img src={NextArrow} alt="" className="slider__next-icon" />
-                              </div>
-                        </>
-                  )}
+                        ))}
+                  </div>
+                  <button onClick={goToNextSlide}>Next</button>
             </div>
       );
 }
