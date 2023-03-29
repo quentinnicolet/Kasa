@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../styles/Emplacement.css";
 import { useParams, Navigate } from 'react-router-dom';
 import Slider from "../Slider";
-import Tag from "../Tag";
+import Tags from "../Tag.js";
 import Host from "../Host";
 import Accordion from "../Accordion";
 import Star from "../../assets/Star.png";
@@ -22,10 +22,10 @@ function Emplacement() {
                         <div>
                               <div>{logement?.title}</div>
                               <div>{logement?.location}</div>
-                              {/* <><Tag/> */}
+                              <Tags tags={logement?.tags} />
                         </div>
                         <div>
-                              {/* <><Host/> */}
+                              <Host host={logement?.host} />
                               {/* <><Rating/> */}
                         </div>
                   </div>
