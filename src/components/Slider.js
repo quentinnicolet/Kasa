@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PrevArrow from '../assets/Prev-arrow.png';
 import NextArrow from '../assets/Next-arrow.png';
+import '../styles/Slider.css';
 
 function Slider(props) {
   const [currentIndex, setCurrentIndex] = useState(0);

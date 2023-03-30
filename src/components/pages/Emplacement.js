@@ -3,10 +3,9 @@ import "../../styles/Emplacement.css";
 import { useParams, Navigate } from 'react-router-dom';
 import Slider from "../Slider";
 import Tags from "../Tag.js";
-import Host from "../Host";
-import Accordion from "../Accordion";
-import Star from "../../assets/Star.png";
-import StarEmpty from "../../assets/Star-Empty.png";
+import Host from "../Host.js";
+import Accordion from "../Accordion.js";
+import Rating from "../Rating.js"
 import ListeLogements from "../../database/logement.json";
 
 function Emplacement() {
@@ -26,7 +25,7 @@ function Emplacement() {
                         </div>
                         <div>
                               <Host host={logement?.host} />
-                              {/* <><Rating/> */}
+                              <Rating rating={logement?.rating} />
                         </div>
                   </div>
                   <div id="grid-accordion-emplacement" dclassName="grid-accordion">
