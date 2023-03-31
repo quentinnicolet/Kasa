@@ -3,7 +3,7 @@ import '../styles/Tag.css';
 
 function Tags({ tags }) {
       return (
-            <div>
+            <div id='container-tag'>
                   {tags.map((tag) => (
                         <span>{tag}</span>
                   ))}

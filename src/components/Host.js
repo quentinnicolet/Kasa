@@ -3,7 +3,7 @@ import '../styles/Host.css';
 
 function Host(props) {
       return (
-            <div>
+            <div id='container-host'>
                   <h2>{props.host.name}</h2>
                   <img src={props.host.picture} alt={props.host.name} />
             </div>

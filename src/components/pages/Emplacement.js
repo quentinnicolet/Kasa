@@ -17,13 +17,13 @@ function Emplacement() {
                   <div>
                         <Slider pictures={logement?.pictures} />
                   </div>
-                  <div>
-                        <div>
-                              <div>{logement?.title}</div>
-                              <div>{logement?.location}</div>
+                  <div id="info-emplacement">
+                        <div className="container-emplacement">
+                              <h1>{logement?.title}</h1>
+                              <h2>{logement?.location}</h2>
                               <Tags tags={logement?.tags} />
                         </div>
-                        <div>
+                        <div className="container-emplacement">
                               <Host host={logement?.host} />
                               <Rating rating={logement?.rating} />
                         </div>
