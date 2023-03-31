@@ -14,5 +14,8 @@
       background: #F7F7F7;
       border-radius: 5px;
       color: #FF6060;
-      padding: 1% 3%;
+      padding: 7px 2%;
+}
+.accordion-arrow img{
+      transition: transform ease-in-out 0.3s;
 }

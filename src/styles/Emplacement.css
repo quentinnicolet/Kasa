@@ -57,4 +57,5 @@
 #grid-accordion-emplacement .accordion-description {
       display: flex;
       flex-direction: column;
+      gap: 3px;
 }

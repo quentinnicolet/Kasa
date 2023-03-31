@@ -8,7 +8,7 @@ const Rating = ({ rating }) => {
 
       for (let i = 1; i <= 5; i++) {
             if (i <= rating) {
-                  starArray.push(<img src={Star} alt="star" />);
+                  starArray.push(<img src={Star} alt="star" key={i}/>);
             } else {
                   starArray.push(<img src={StarEmpty} alt="empty star" />);
             }
