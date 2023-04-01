@@ -1,4 +1,4 @@
-# KASA in progress
+# KASA
 Welcome to KASA, an apartment reservation application similar to Airbnb. The application is designed to offer a seamless user experience, and we have employed various cutting-edge technologies to ensure this.
 
 One such technology is React, which enables ultra-fast navigation and data transfer. We have coded the entire application with React's lifecycles, which has enabled us to optimize performance and enhance scalability. In addition, we have created reusable stateless components to ensure that the application is easy to maintain and extend.
