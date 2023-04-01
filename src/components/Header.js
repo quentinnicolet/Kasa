@@ -3,10 +3,13 @@ import '../styles/Header.css';
 import { ReactComponent as Logo } from '../assets/LOGO.svg';
 import { Link } from 'react-router-dom';
 
+// Définir la fonction Header qui va retourner notre header
 function Header() {
     return (
         <header>
-            <Logo id="logo" />
+            {/* Création d'un lien vers l'accueil et ajout du logo */}
+            <Link to="/"><Logo id="logo" /></Link>
+            {/* Création du navbar */}
             <nav id="menu">
                 <ul>
                     <li>
@@ -21,4 +24,5 @@ function Header() {
     )
 }
 
+// Exporter le header
 export default Header;
