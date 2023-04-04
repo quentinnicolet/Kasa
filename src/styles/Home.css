@@ -31,11 +31,19 @@
     .contanier-emplacements{
         grid-template-columns: 1fr 1fr;
     }
+    #home-container h1{
+        font-size: 5vw;
+    }
 }
 @media (max-width: 768px){
     .contanier-emplacements{
         grid-template-columns: 1fr ;
     }
+    #home-container h1{
+        font-size: 8vw;
+        padding-left: 5%;
+    }
+
 }
 .contanier-emplacements a{
     text-decoration: none !important;

@@ -11,13 +11,15 @@ header {
     width: 100px;
 }
 
-#menu  li a {
+#menu li a {
     color: #FF6060;
     text-decoration: none;
 }
-#menu a:hover, #menu a:active,  #menu .is-active{
-    text-decoration: underline !important;
+
+#menu a:hover, #menu a.active {
+    text-decoration: underline #FF6060 !important;
 }
+
 #menu ul {
     list-style-type: none;
     display: flex;

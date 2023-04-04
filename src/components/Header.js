@@ -1,22 +1,22 @@
 import React from "react";
 import '../styles/Header.css';
 import { ReactComponent as Logo } from '../assets/LOGO.svg';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // Définir la fonction Header qui va retourner notre header
 function Header() {
     return (
         <header>
             {/* Création d'un lien vers l'accueil et ajout du logo */}
-            <Link to="/"><Logo id="logo" /></Link>
+            <NavLink to="/"><Logo id="logo" /></NavLink>
             {/* Création du navbar */}
             <nav id="menu">
                 <ul>
                     <li>
-                        <Link exact activeClassName='is-active' to="/">Accueil</Link>
+                        <NavLink exact to="/">Accueil</NavLink>
                     </li>
                     <li>
-                        <Link activeClassName='is-active' to="/about">About</Link>
+                        <NavLink to="/about">About</NavLink>
                     </li>
                 </ul>
             </nav>
