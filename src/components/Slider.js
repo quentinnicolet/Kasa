@@ -34,9 +34,11 @@ function Slider(props) {
   return (
     <div className="slider">
       {/* Bouton qui déclenche la fonction goToPreviousSlide lors du clic */}
-      <button className="arrow prev-arrow" onClick={goToPreviousSlide}>
-        <img src={PrevArrow} alt="Previous" />
-      </button>
+      {props.pictures.length > 1 && (
+        <button className="arrow prev-arrow" onClick={goToPreviousSlide}>
+          <img src={PrevArrow} alt="Previous" />
+        </button>
+      )}
       <div className="slides">
         {/* Boucle sur le tableau props.pictures pour afficher les images et ajouter la classe active à l'image affichée */}
         {props.pictures.map((picture, index) => (
@@ -48,10 +50,14 @@ function Slider(props) {
           </div>
         ))}
       </div>
-      {/* Bouton qui déclenche la fonction goToNextSlide lors du clic */}
-      <button className="arrow next-arrow" onClick={goToNextSlide}>
-        <img src={NextArrow} alt="Next" />
-      </button>
+      {props.pictures.length > 1 && (
+        <>
+          <div id='slider-count'>{`${currentIndex + 1}/${props.pictures.length}`}</div>
+          <button className="arrow next-arrow" onClick={goToNextSlide}>
+            <img src={NextArrow} alt="Next" />
+          </button>
+        </>
+      )}
     </div>
   );
 }

@@ -12,10 +12,10 @@ function Accordion({ title, description, show = false }) {
       return (
             <div className="accordion" id={`accordion-${title}`}>
                   {/* Encapsule le titre et le bouton qui permet l'ouverture et la fermeture de l'accordéon */}
-                  <div className="header-accordion">
+                  <div className={`header-accordion ${open}`} onClick={() => setOpen(!open)}>
                         <div className="accordion-title">{title}</div>
                         {/* Ajout d'une classe open pour modifier l'apparence lorsque l'accordéon est ouvert */}
-                        <span className={`accordion-arrow ${open}`} onClick={() => setOpen(!open)}>
+                        <span className="accordion-arrow">
                               {/* Utilise l'image de flèche et applique une rotation de 180° si l'accordéon est ouvert*/}
                               <img src={arrow} alt="Ouvrir cette liste" style={{ transform: open ? 'rotate(180deg)' : 'none' }} />
                         </span>

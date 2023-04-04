@@ -4,16 +4,20 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 #logo {
     width: 100px;
 }
 
-#menu * {
+#menu  li a {
     color: #FF6060;
+    text-decoration: none;
 }
-
+#menu a:hover, #menu a:active,  #menu .is-active{
+    text-decoration: underline !important;
+}
 #menu ul {
     list-style-type: none;
     display: flex;

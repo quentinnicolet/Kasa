@@ -32,12 +32,15 @@
       #info-emplacement h1 {
             font-size: 30px;
       }
-      #info-emplacement, #grid-accordion-emplacement{
+
+      #info-emplacement,
+      #grid-accordion-emplacement {
             grid-template-columns: 1fr !important;
             margin-top: 20px;
-
+            gap: 20px;
       }
-      #info-emplacement .container-emplacement:last-child{
+
+      #info-emplacement .container-emplacement:last-child {
             flex-direction: row-reverse;
             align-items: center;
       }

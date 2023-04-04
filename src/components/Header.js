@@ -13,10 +13,10 @@ function Header() {
             <nav id="menu">
                 <ul>
                     <li>
-                        <Link to="/">Accueil</Link>
+                        <Link exact activeClassName='is-active' to="/">Accueil</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link activeClassName='is-active' to="/about">About</Link>
                     </li>
                 </ul>
             </nav>

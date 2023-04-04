@@ -63,12 +63,10 @@
     z-index: 1;
     margin-bottom: 25px;
     font-weight: bold;
-    color: #FF6060;
-    background-color: #ffffffc2;
+    color: #FFF;
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
-    border: 1.5px #FF6060 solid;
     transition: background-color 0.35s ease-in-out 10ms;
 }
 .contanier-emplacements a:hover .card img{
@@ -78,6 +76,6 @@
 .contanier-emplacements a:hover .card .card-title{
     color: #FFF;
     background-color: #FF6060;
-    border-color: #FFF;
+    border: 1px solid #FFF;
     /* transition: background-color 0.35s ease-in-out 10ms; */
 }
